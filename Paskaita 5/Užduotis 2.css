@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    border: 1px solid; color: black;
+    }
+
+.virsutinė-juosta {
+    background-color: white;
+    width: 92%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.kairys-blokas {
+    background-color: white;
+    width: 45%;
+    display: inline-block;
+    height: 100px;
+    margin-right: 2%;
+}
+
+.desinys-blokas {
+    background-color: white;
+    width: 45%;
+    display: inline-block;
+    height: 100px;
+}

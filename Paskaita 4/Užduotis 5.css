@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.p1 {
+    background-color: aqua;
+}
+
+.p2 {
+    background-color: blueviolet;
+}
+
+.border {
+    margin-top: 50px;
+    border-bottom: 2px solid blue;
+    border-top: 5px double green;
+    border-left: 2px dashed red;
+    border-right: 2px dotted yellow;
+    padding: 20px;
+}
+

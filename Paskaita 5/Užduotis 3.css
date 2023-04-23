@@ -1,0 +1,40 @@
+div {
+    border: 1px solid; color: black;
+    }
+
+.viršutinė-juosta {
+    background-color: white;
+    width: 92%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.kairys-blokas {
+    background-color: white;
+    width: 20%;
+    height: 70px;
+    display: inline-block;
+    }
+
+.dešinė-viršutinė-juosta {
+    background-color: white;
+    width: 70%;
+    display:inline-block;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.dešinė-apatinė-juosta {
+    background-color: white;
+    width: 70%;
+    display: inline-block;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.apatinė-juosta {
+    background-color: white;
+    width: 92%;
+    height: 30px;
+    margin-top: 20px;
+}

@@ -16,9 +16,19 @@ div {
     display: inline-block;
     }
 
-.dešinė-viršutinė-juosta {
+.wrapper {
     background-color: white;
     width: 70%;
+    display:inline-block;
+    height: 70px;
+    margin-left: 15px;
+    border: 1px solid white;
+    vertical-align: top;
+}
+
+.dešinė-viršutinė-juosta {
+    background-color: white;
+    width: 99%;
     display:inline-block;
     height: 30px;
     margin-left: 15px;
@@ -26,7 +36,7 @@ div {
 
 .dešinė-apatinė-juosta {
     background-color: white;
-    width: 70%;
+    width: 99%;
     display: inline-block;
     height: 30px;
     margin-left: 15px;

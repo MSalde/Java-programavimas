@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.Flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid pink;
+    justify-content: center;
+    width: 800px;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.Message-row {
+display: flex;
+flex-wrap: wrap;
+border: 5px solid rgb(31, 129, 194);
+width: 750px;
+height: 80px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: smaller;
+padding: 10px;
+}
+
+.desine {
+    justify-content: flex-end;
+}
+
+.pav-des {
+order: 2;
+}
+
+.antraste {
+margin: 0;
+}

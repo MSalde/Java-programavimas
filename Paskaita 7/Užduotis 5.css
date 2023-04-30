@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.Navbar {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 30px;
+    margin: 20px;  
+}
+
+.item {
+    display: flex;
+    border: 2px solid grey; border-radius: 5px;
+    width: 150px;
+    margin-left: 15px;
+    color: white;
+    background-color: grey; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: smaller;
+    justify-content: center;
+    padding: 5px;    
+}
+
+.Navbar a:hover {
+    background-color: rgb(74, 231, 179);
+    border-color: rgb(74, 231, 179);
+    color: white;
+}

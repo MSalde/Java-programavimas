@@ -10,7 +10,9 @@ public class Uzduotis2 {
         double b = skait2.nextDouble();
         System.out.println("Plotas su " + a + " ilgiu ir " + b + " plociu yra: " + staciakampioPlotas(a, b));
         System.out.println("Perimetras su " + a + " ilgiu ir " + b + " plociu yra: " + staciakampioPerimetras(a, b));
-        System.out.println (kurisDidesnis(a, b));
+        Double rezPlotas = staciakampioPlotas (a, b);
+        Double rezPerimetras = staciakampioPerimetras(a, b);
+        System.out.println (kurisDidesnis(rezPlotas, rezPerimetras));
     }
     public static double staciakampioPlotas(double a, double b) {
         return a * b;
@@ -18,8 +20,8 @@ public class Uzduotis2 {
     public static double staciakampioPerimetras(double a, double b) {
         return (a + b) * 2;
     }
-    public static String kurisDidesnis (double staciakampioPerimetras, double staciakampioPlotas) {
-        if  (staciakampioPerimetras > staciakampioPlotas) {
+    public static String kurisDidesnis (double rePlotas, double rezPerimetras) {
+        if  (rePlotas > rezPerimetras) {
             return ("Staciakmpio plotas yra didesnis.");
         }else{
             return ("Staciakampio perimetras yra didesnis.");

@@ -5,7 +5,7 @@ public class Uzduotis2 {
         int [] masyvas = {5, 10, 15, 20, 25, 30, 35, 40};
         int[] naujasMasyvas = kopijuotiMasyva(masyvas);
         System.out.println("masyvas = " + Arrays.toString(masyvas));
-        System.out.println(Arrays.toString(kopijuotiMasyva(naujasMasyvas)));
+        System.out.println(Arrays.toString((naujasMasyvas)));
     }
     public static int[] kopijuotiMasyva(int[] masyvas) {
         int [] masyvokopija = new int [masyvas.length];;

@@ -13,10 +13,8 @@ public class PagrindinePrograma {
         s1.padidintiSpinduli(2);
         System.out.println("Sumazintas spindulys:" + s1);
         System.out.println("Sumazintas spindulys:" + s2);
-        s1.apskritimoIlgis();
         System.out.println("s1 apskritimo ilgis = " + s1.apskritimoIlgis());
         System.out.println("s2 apskritimo ilgis = " + s2.apskritimoIlgis());
-        s1.apskritimoPlotas();
         System.out.println("s1.apskritimo plotas() = " + s1.apskritimoPlotas());
         System.out.println("s2.apskritimo plotas() = " + s2.apskritimoPlotas());
     }

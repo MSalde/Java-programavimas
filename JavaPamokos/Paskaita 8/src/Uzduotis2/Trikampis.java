@@ -5,14 +5,14 @@ public class Trikampis {
     double a;
     double b;
     double c;
+    double ab;
+    double bc;
+    double ca;
 
     public Trikampis() {
     }
 
     public Trikampis(double a, double b, double c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
 
         if (arTrikampis(a, b, c)) {
             this.a = a;
@@ -65,16 +65,10 @@ public class Trikampis {
 
     public boolean arTrikampis(double a, double b, double c) {
         if (a + b >= c || a + c >= b || b + c >= a)
-            return false;
-        else
             return true;
+        else
+            return false;
     }
-
-
-    double ab;
-    double bc;
-    double ca;
-
 
     public void apskaiciuotiKampa (double a, double b, double c) {
         ab = Math.toDegrees(Math.acos((Math.pow(a, 2) + Math.pow(b, 2) - Math.pow(c, 2)) / (2 * a * b)));

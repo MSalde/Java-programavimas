@@ -23,5 +23,7 @@ public class PagrindinePrograma {
         System.out.println("t2 kuri didziausia() = " + t2.kuriDidziausia());
         System.out.println("t1.arTrikampis() = " + t1.arTrikampis(t1.a, t1.a, t1.c));
         System.out.println("t2.arTrikampis() = " + t2.arTrikampis(t2.a, t2.b, t2.c));
+        System.out.println(t1);
+        System.out.println(t2);
     }
 }

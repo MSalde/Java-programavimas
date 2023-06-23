@@ -18,6 +18,7 @@ public class Trikampis {
             this.a = a;
             this.b = b;
             this.c = c;
+            apskaiciuotiKampa(a, b, c);
         } else {
             this.a = 0;
             this.b = 0;
@@ -31,21 +32,28 @@ public class Trikampis {
                 "a=" + a +
                 ", b=" + b +
                 ", c=" + c +
+                ", ab=" + ab +
+                ", bc=" + bc +
+                ", ca=" + ca +
                 '}';
     }
+
     public double trikampioPerimetras() {
         return a + b + c;
     }
+
     public void sumazintiTrikampi(int santykis) {
         a /= santykis;
         b /= santykis;
         c /= santykis;
     }
-    public double trikampioPlotas (){
+
+    public double trikampioPlotas() {
         double p = trikampioPerimetras() / 2;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
-    public char kuriDidziausia (){
+
+    public char kuriDidziausia() {
         if (a > b && a > c) {
             return 'a';
         } else if (b > a && b > c) {
@@ -54,11 +62,23 @@ public class Trikampis {
             return 'c';
         }
     }
-    public boolean arTrikampis (double a, double b, double c){
+
+    public boolean arTrikampis(double a, double b, double c) {
         if (a + b >= c || a + c >= b || b + c >= a)
             return false;
         else
             return true;
     }
 
+
+    double ab;
+    double bc;
+    double ca;
+
+
+    public void apskaiciuotiKampa (double a, double b, double c) {
+        ab = Math.toDegrees(Math.acos((Math.pow(a, 2) + Math.pow(b, 2) - Math.pow(c, 2)) / (2 * a * b)));
+        bc = Math.toDegrees(Math.acos((Math.pow(b, 2) + Math.pow(c, 2) - Math.pow(a, 2)) / (2 * b * c)));
+        ca = Math.toDegrees(Math.acos((Math.pow(c, 2) + Math.pow(a, 2) - Math.pow(b, 2)) / (2 * c * a)));
+    }
 }
